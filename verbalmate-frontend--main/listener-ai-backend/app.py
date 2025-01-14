@@ -1,6 +1,7 @@
 import streamlit as st
 import tempfile
 import os
+import base64
 import google.generativeai as genai
 from PIL import Image, ImageSequence
 from dotenv import load_dotenv
@@ -58,34 +59,55 @@ def save_uploaded_file(uploaded_file):
 # Streamlit app interface
 st.title('VerbalMate AI')
 
-# Initialize session state for transcription and performance analysis
+# Initialize session state for transcription, performance analysis, and processing status
 if "transcription" not in st.session_state:
     st.session_state["transcription"] = None
 
 if "performance" not in st.session_state:
     st.session_state["performance"] = None
 
+if "is_processing" not in st.session_state:
+    st.session_state["is_processing"] = False
+
 audio_file = st.file_uploader("Upload Audio File", type=['wav', 'mp3'])
 if audio_file is not None:
     audio_path = save_uploaded_file(audio_file)  # Save the uploaded file and get the path
     st.audio(audio_path)
 
-    if st.button('Analyze Audio'):
+    if st.button('Analyze Audio', disabled=st.session_state["is_processing"]):
+        st.session_state["is_processing"] = True
         # Create a placeholder for the GIF
         gif_placeholder = st.empty()
         
-        # Display the GIF
-        frames = []
-        for frame in ImageSequence.Iterator(gif):
-            frames.append(frame.copy())
-        gif_placeholder.image(frames[0], caption='Processing audio...')
-        
-        # Process the audio
-        st.session_state["transcription"] = transcribe_audio(audio_path)
-        st.session_state["performance"] = analyze_performance(st.session_state["transcription"])
-        
-        # Clear the GIF after processing
-        gif_placeholder.empty()
+        try:
+            # Read and encode the GIF file
+            with open('cat.gif', 'rb') as f:
+                gif_bytes = f.read()
+                gif_b64 = base64.b64encode(gif_bytes).decode()
+            
+            # Display the animated GIF using HTML
+            gif_html = f"""
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <img src="data:image/gif;base64,{gif_b64}" alt="Processing..." style="max-width: 300px;">
+                    <p style="margin-top: 20px; font-size: 18px; color: #4A4A4A;">
+                        Hold your whiskers! The AI is cracking the audio... 
+                        <br>Meanwhile, Cat's doing the oo ee ah ah dance to keep the vibes right. 
+                        <br>Stay paw-sitive! 🐱
+                    </p>
+                </div>
+            """
+            gif_placeholder.markdown(gif_html, unsafe_allow_html=True)
+            
+            # Process the audio
+            st.session_state["transcription"] = transcribe_audio(audio_path)
+            st.session_state["performance"] = analyze_performance(st.session_state["transcription"])
+            
+            # Clear the GIF after processing
+            gif_placeholder.empty()
+        except Exception as e:
+            st.error(f"Error processing: {str(e)}")
+        finally:
+            st.session_state["is_processing"] = False
 
 # Add toggle buttons for switching between panes
 if st.session_state["transcription"] and st.session_state["performance"]:
