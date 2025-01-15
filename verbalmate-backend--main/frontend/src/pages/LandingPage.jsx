@@ -18,9 +18,9 @@ export default function LandingPage() {
           <Link to="/category">
             <button className={landingPageStyles.startButton}>Start Conversation with AI</button>
           </Link>
-          <Link to="">
+          {/* <Link to="">
             <button className={landingPageStyles.startButton}>Lucy - 3D Conversational AI</button>
-          </Link>
+          </Link> */}
           <Link to="https://framevr.io/tvj-kda-trl#office-hex-1">
             <button className={landingPageStyles.startButton}>Virtual Meeting Room</button>
           </Link>
