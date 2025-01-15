@@ -12,13 +12,13 @@ export default function LandingPage() {
           <p className={landingPageStyles.description}>
             Still struggling to talk properly to a human? Let AI help you instead.
           </p>
-          <Link to="https://verbalmate-ai-analyzer.vercel.app/">
+          <Link to="https://verbal-mate-ai-nosu-listener.vercel.app/">
             <button className={landingPageStyles.startButton}>Analyze your conversations</button>
           </Link>
           <Link to="/category">
             <button className={landingPageStyles.startButton}>Start Conversation with AI</button>
           </Link>
-          <Link to="https://verbalmate-ai-analyzer.vercel.app/">
+          <Link to="">
             <button className={landingPageStyles.startButton}>Lucy - 3D Conversational AI</button>
           </Link>
           <Link to="https://framevr.io/tvj-kda-trl#office-hex-1">
