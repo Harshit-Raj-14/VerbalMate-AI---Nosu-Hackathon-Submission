@@ -1,113 +1,117 @@
-# VerbalMate AI 🎙️
+# VerbalMate AI - Your Gateway to Confident Conversations 
 
-VerbalMate AI is an intelligent conversation analysis platform that helps users improve their communication skills through AI-powered feedback. The platform transcribes audio conversations and provides detailed performance analysis, making it an invaluable tool for professionals looking to enhance their verbal communication abilities.
+# Deployed Link 
+**Link - https://verbalmate.vercel.app/**
 
-## 🌟 Features
+**Video Demo - https://youtu.be/NmAJ-MwnDFw?si=9g9UlUjn-wsiS-5s**
 
-- **Audio Recording & Upload**: Record conversations directly or upload audio files for analysis
-- **Real-time Transcription**: Convert spoken conversations into accurate text transcripts
-- **Performance Analysis**: Get detailed insights on:
-  - Overall communication score
-  - Professionalism
-  - Responsiveness
-  - Clarity
-  - Engagement
-- **Interactive Audio Player**: Easy-to-use interface for reviewing conversations
-- **Detailed Feedback**: Receive specific strengths, weaknesses, and actionable suggestions
-- **Key Insights**: Get valuable takeaways from each conversation
-- **Future Actions**: Personalized recommendations for improvement
+<hr>
 
-## 🚀 Getting Started
+## The Problem We Are Trying to Solve
+Today many people struggle with improving their conversational skills due to lack of personalized feedback and practice. 
+There is a need for an AI solution that provides real-time analysis and actionable feedback to help individuals enhance their communication abilities.
+To practice their conversational skills in a simulated environment so they can perform well in the real world.
 
-### Prerequisites
 
-#### Frontend
-- Node.js (v19.0.0 or higher)
-- npm/yarn package manager
+## Our Solution
+VerbalMate AI is an innovative tool designed to help individuals enhance their conversational skills by turning everyday interactions into valuable learning experiences.  
+By recording, transcribing, and analyzing conversations, VerbalMate AI provides personalized feedback, performance insights, and simulated scenarios, enabling users to improve their communication abilities and gain confidence in any setting.  
+VerbalMate also provides the opportunity to practice your conversational skills with an Interviewer AI based on any situation you want to simulate by giving it a prompt.
 
-#### Backend
-- Python 3.8 or higher
-- pip package manager
+Additionally, with Lucy 3D Conversational AI, users can engage in lifelike, personalized interactions with an AI avatar, adapting to contextual changes and recognizing emotions for a more immersive experience.  
 
-### Installation
+The Virtual Meeting Room feature allows users to join virtual meetings in a 3D environment, collaborate in real-time, and maintain anonymity, making it an ideal tool for practicing communication in group settings and professional scenarios.
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/verbalmate-ai.git
-cd verbalmate-ai
+## Key Features of VerbalMate AI
+
+### Analyze Conversations with AI  
+- **Performance Analyzer**:  
+  - Identifies areas for improvement.  
+  - Highlights strengths.  
+  - Offers self-reflection insights.  
+  - Analyzes caller’s hidden emotions.  
+  - Provides scorecards to track progress.  
+- **Real-Time Feedback**: Offers feedback during or after calls.  
+- **Continuous Improvement**: Ensures ongoing skill enhancement.  
+
+### VerbalMate Interviewer AI  
+- **Customizable Scenarios**: Simulate any interview by giving a prompt and setting difficulty level you want.  
+- **Role-Specific Interviewers**: Practice with tailored interviewers (e.g., HR, technical).  
+- **Dynamic Questioning**: Adapts questions based on your responses.  
+- **Instant Feedback**: Get immediate performance insights.  
+
+### Lucy 3D Conversational AI  
+- **Realistic AI Interaction**: Engage in lifelike conversations with an AI avatar.  
+- **Contextual Awareness**: The AI adapts to the context and flow of the conversation.  
+- **Emotion Recognition**: Lucy detects emotional cues and adjusts responses accordingly.  
+- **Personalized Conversations**: Customizable AI behavior based on user preferences and interactions.  
+
+### Virtual Meeting Room  
+- **Immersive Interaction**: Join virtual meetings and interact in a 3D environment.  
+- **Real-Time Collaboration**: Share ideas, documents, and more with participants during the meeting.  
+- **Anonymity Options**: Participate without revealing your identity, enhancing privacy.  
+- **Interactive Features**: Includes tools for better engagement like whiteboards, group chat, and screen sharing.
+    
+
+---
+
+## Tech Stack
+**React.js, Node.js, Gemini, Python, Streamlit, ElevenLabs, Groq LLM, Codebuff**
+
+## Run the project
+**1. Clone/Download this repo.**
+```
+git clone https://github.com/Harshit-Raj-14/VerbalMate-AI
 ```
 
-2. **Set up the Frontend**
-```bash
-cd listener-ai-frontend
+**2. Run backend part**
+```
+cd verbalmate--interview-ai
+```
+
+```
+cd backend
+```
+
+**Make a .env file**
+```
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+GROQ_API_KEY=
+ELEVEN_LAB_API_KEY=
+```
+
+```
+node index.js
+```
+
+**3. Run frontend part**
+```
+cd frontend
+```
+```
 npm install
+```
+```
 npm start
 ```
 
-3. **Set up the Backend**
-```bash
-cd listener-ai-backend
-pip install -r requirements.txt
-python app.py
-```
+Go to localhost:3000
 
-4. **Environment Variables**
-Create a `.env` file in the backend directory with:
-```
-GOOGLE_API_KEY=your_google_api_key
-```
+# PROJECT SNAPS
 
-## 🛠️ Tech Stack
+<hr>
 
-### Frontend
-- React.js
-- CSS3
-- HTML5
 
-### Backend
-- Python
-- Streamlit
-- Google Generative AI
-- Python-dotenv
+<hr>
 
-## 📖 Usage
 
-1. **Record or Upload Audio**
-   - Use the "Record / Upload Audio" button to input your conversation
-   - Supported formats: WAV, MP3
+<hr>
 
-2. **View Transcription**
-   - See the conversation converted to text
-   - Review specific timestamps and speaker identification
 
-3. **Analyze Performance**
-   - Check your performance scores
-   - Review strengths and weaknesses
-   - Get actionable insights for improvement
+<hr>
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+<hr>
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- Your Name - *Initial work* - [YourGithub](https://github.com/yourusername)
-
-## 🙏 Acknowledgments
-
-- Google Generative AI for powering our analysis
-- All contributors who have helped shape this project
-
-## 📞 Support
-
-For support, email support@verbalmate.ai or open an issue in the repository.
+## THANK YOU
