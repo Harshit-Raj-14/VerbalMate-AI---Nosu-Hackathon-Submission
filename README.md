@@ -99,19 +99,29 @@ npm start
 Go to localhost:3000
 
 # PROJECT SNAPS
+![Screenshot 2025-01-16 at 02-52-36 VerbalMate AI](https://github.com/user-attachments/assets/6a7faed8-dcb1-4c8e-b47e-9d9d4027f175)
 
 <hr>
 
+![Screenshot 2025-01-16 at 02-52-47 VerbalMate AI](https://github.com/user-attachments/assets/75e5c157-ec06-44e3-a1f7-51a612954191)
 
 <hr>
 
+![Screenshot 2025-01-16 at 02-52-58 VerbalMate AI](https://github.com/user-attachments/assets/63dba759-7355-4843-8786-5131cd68efd6)
 
 <hr>
 
+![Screenshot 2025-01-16 at 02-53-23 VerbalMate AI](https://github.com/user-attachments/assets/7abc5942-5058-4ca6-873e-53f1933eada0)
 
 <hr>
 
+![Screenshot 2025-01-16 at 02-53-44 Streamlit](https://github.com/user-attachments/assets/9bd9e657-8e2c-4008-87f0-c89800154199)
 
 <hr>
+
+![Screenshot (114)](https://github.com/user-attachments/assets/25da5d2a-c753-4bdc-aba1-d7530a5aac59)
+
+<hr>
+
 
 ## THANK YOU
