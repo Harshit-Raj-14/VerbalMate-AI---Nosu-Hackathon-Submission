@@ -209,7 +209,9 @@ export default function InterviewPage() {
               className={`${interviewStyles.sectionBackground} ${interviewStyles.qASection}`}
             >
               <p className={interviewStyles.sectionTitle}>Question</p>
-              <p className={interviewStyles.sectionContent}>{aiResponse}</p>
+              <p className={interviewStyles.sectionContent}>{aiResponse}
+                Please watch the video demo to view this feature in action as we have exhausted our api key.
+              </p>
             </div>
             <div
               className={`${interviewStyles.sectionBackground} ${interviewStyles.qASection} ${interviewStyles.answerSection}`}
