@@ -14,7 +14,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 
 # Path to your GIF file
-gif_path = "verbalmate-frontend--main\listener-ai-backend\cat.gif"
+gif_path = "cat.gif"
 gif = Image.open(gif_path)
 
 performance_prompt = '''
