@@ -1,10 +1,11 @@
 # VerbalMate AI - Your Gateway to Confident Conversations 
 
+<!-- 
 # Deployed Link 
 **Link - https://verbalmate.vercel.app/**
 
 **Video Demo - https://youtu.be/NmAJ-MwnDFw?si=9g9UlUjn-wsiS-5s**
-
+-->
 <hr>
 
 ## The Problem We Are Trying to Solve
@@ -98,7 +99,9 @@ npm start
 
 Go to localhost:3000
 
+<!-- 
 # PROJECT SNAPS
+
 ![Screenshot 2025-01-16 at 02-52-36 VerbalMate AI](https://github.com/user-attachments/assets/6a7faed8-dcb1-4c8e-b47e-9d9d4027f175)
 
 <hr>
@@ -122,6 +125,8 @@ Go to localhost:3000
 ![Screenshot (114)](https://github.com/user-attachments/assets/25da5d2a-c753-4bdc-aba1-d7530a5aac59)
 
 <hr>
+-->
+
 
 
 ## THANK YOU
